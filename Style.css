@@ -1,0 +1,442 @@
+/**{
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+line-height: 1.5;
+}*/
+p{
+    font-size: 16px;
+    color:#465b52;
+    margin:15px 0 20px 0;
+}
+
+body{
+    width: 100%;
+}
+.section-p1{
+    padding:40px 80px;
+}
+.section-m1{
+        margin:40px 0;
+    }
+
+#entete{
+    display:flex;
+    align-items:flex-start;
+    justify-content: space-between;
+    padding: 2px 10px 0px;
+    background-color: #fee8f3;
+    box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.06)  ;
+    width: 100%;
+
+}
+.logo{
+    position:sticky;
+    top:10px;
+    left:0px;
+}
+h2{
+    font-size: 40px;
+    font-family: helvetica;
+}
+#navbar{
+    font-family:helvetica;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    position:inherit;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#navbar li{
+    padding: 0 10px;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+}
+#navbar li a{
+   text-decoration: none; 
+   font-size: 16px;
+   font-weight: 600;
+   color: rgb(38, 37, 38);
+   transition:0.3s ease ;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:rgb(227, 17, 129);
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content:"";
+    width: 25%;
+    height: 2px;
+    background-color: rgb(227, 17, 129) ;
+    position:absolute;
+    bottom: -4px;
+    left: 20px ;
+}
+
+#sidebar{
+    background-image: url("soins-de-beaute.webp") ;
+    /*opacity: 0.5;*/
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#sidebar h4{
+    font-family: helvetica;
+    padding-bottom: 15px;
+    font-size: large;
+}
+#sidebar h1{
+    color:rgb(0, 0, 0);
+    font-family: helvetica;
+    font-size: xx-large;
+}
+#sidebar h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+
+}
+#sidebar button{
+    /*background-image: url("flower.png");*/
+    font-family: helvetica;
+    background-color:rgb(227, 17, 129);
+    color:rgb(3, 0, 5);
+    border:color-mix(in hsl shorter hue, color percentage, color percentage);
+    padding: 14px 80px 14px 65px;
+    cursor:pointer;
+    font-weight: 400;
+    font-size: 16px;
+
+}
+button{
+font-family: helvetica;
+    background-color:rgb(227, 17, 129);
+    color:rgb(3, 0, 5);
+    border:color-mix(in hsl shorter hue, color percentage, color percentage);
+    padding: 14px 80px 14px 65px;
+    cursor:pointer;
+    font-weight: 400;
+    font-size: 16px;
+}
+#banner{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:url("saintv.jpg") ;
+    /*background-repeat:initial;*/
+    /*background-position: center;*/
+    height: 40vh;
+    width: 100%;
+    padding: 20px 80px;
+    background-size: cover;
+    background-position: center;
+}
+#banner h1{
+    color: white;
+    font-size: 50px;
+    font-family: helvetica;
+}
+#banner h3{
+    color: white;
+    font-size: 50px;
+    font-family: helvetica;
+    padding: 10px 0;
+}
+#banner h3 span{
+    color: rgb(131, 3, 3);
+}
+
+#parfums{
+    text-align: center;
+    
+}
+#parfums h2{
+    font-size: 40px;
+    font-family: helvetica;
+    color:deeppink;
+    text-shadow: 0px 0px 2px;;
+
+
+}
+#parfums .pro-contaier{
+display: flex;
+justify-content: space-between;
+padding: 20px;
+flex-wrap: wrap;
+}
+#parfums .pro {
+    width:23% ;
+    min-width: 250px;
+    padding: 10px 12px;
+    border:1px solid rgb(247, 247, 247);
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: 02s ease;
+}
+#parfums .pro:hover{
+    box-shadow: 10px 10px 54px rgba(193, 5, 245, 0.429);
+}
+#parfums .pro img{
+    width: 100;
+    border-radius: 20px;
+}
+#parfums .pro .des{
+    text-align: center;
+    padding: 10px;
+}
+#parfums .pro .des span{
+    color: crimson;
+    font-size: 12px;
+    font-family: helvetica;
+}
+
+
+#Promos{
+    text-align: center;
+}
+#Promos h2{
+    color:deeppink;
+    text-shadow: 0px 0px 2px;
+}
+#Promos .pro-contaier{
+display: flex;
+justify-content: space-between;
+padding: 20px;
+flex-wrap: wrap;
+}
+#Promos .pro {
+    width:23% ;
+    min-width: 250px;
+    padding: 10px 12px;
+    border:1px solid rgb(247, 247, 247);
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+    border-radius: 20px;
+    cursor: pointer;
+    margin: 15px 0;
+    transition: 02s ease;
+}
+#Promos .pro:hover{
+    box-shadow: 10px 10px 54px rgb(255, 1, 124);
+}
+#Promos .pro img{
+    width: 100;
+    border-radius: 20px;
+}
+#Promos .pro .des{
+    text-align: center;
+    padding: 10px;
+}
+#Promos .pro .des span{
+    color: crimson;
+    font-size: 20px;
+    font-family:helvetica;
+}
+footer h4{
+    font-size: 15px;
+    padding-bottom: 20px;
+}
+footer p{
+    font-size: 14px;
+    margin: 0 0 8px 0;
+    flex-wrap: wrap;
+}
+footer a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+footer.colonne{
+    flex-wrap: wrap;
+    background-position: left;
+}
+footer .colonne h4{
+    font-family: helvetica;
+    color: #7c7578;
+    font-size: 12px;
+}
+footer .follow{
+margin-top: 20px;
+padding-right: 4px ;
+cursor: pointer;
+flex-wrap: wrap;
+background-position: center;
+}
+
+footer .follow h4{
+    font-family: helvetica;
+    color: #7c7578;
+    font-size: 12px;
+}
+footer .section-p1{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+.jumbotron{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+footer .my-4 p{
+    text-align: center;
+    justify-content: center;
+}
+/*////////////////////////////////////////////////*
+/*Page maquillage*/
+
+p{
+    padding-top: 10px;
+    text-align:center ;
+  
+}
+p a {
+    display: inline-block;
+    text-decoration: none;
+}
+#sidebar-m{
+    background-image: url("colors.jpg");
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: aliceblue;
+    font-size:20px ;
+    text-align:center ;
+    padding: 14px;
+  
+}
+#sidebar-m h1{
+   
+    font-size:50px ;
+    font-family: helvetica;
+    color: #fff;
+}
+#sidebar-m h2{
+   
+    font-size:40px ;
+    font-family: helvetica;
+    color: #fff;
+}
+#sidebar-m h3{
+   
+    font-size:30px ;
+    font-family: helvetica;
+    color: #fff;
+}
+#media{
+    max-width: 800px; /* Largeur maximale du container */
+    margin: 0 auto; /* Centre le container horizontalement */
+    padding-top: 20px;
+    text-align: center;
+}
+iframe{
+display:block;
+margin: 0 auto;
+}
+
+/*page parfun*/
+#sidebar-p{
+    background-image: url("wepik-export-20240215141349L6KE.jpeg");
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: aliceblue;
+    font-size:20px ;
+    text-align:center ;
+    padding: 14px;
+  
+}
+#sidebar-p h1{
+   
+    font-size:50px ;
+    font-family: helvetica;
+    color: #fff;
+}
+#sidebar-p h2{
+   
+    font-size:40px ;
+    font-family: helvetica;
+    color: #fff;
+}
+#sidebar-p h3{
+   
+    font-size:30px ;
+    font-family: helvetica;
+    color: #fff;
+}
+/*page soin*/
+
+#sidebar-s{
+    background-image: url("wepik-export-20240215142623czhn.jpeg");
+    width: 100%;
+    height: 50vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    text-decoration: aliceblue;
+    font-size:20px ;
+    text-align:center ;
+    padding: 14px;
+  
+}
+#sidebar-s h1{
+   
+    font-size:50px ;
+    font-family: helvetica;
+    color: #fff;
+}
+#sidebar-s h2{
+   
+    font-size:40px ;
+    font-family: helvetica;
+    color: #fff;
+}
+#sidebar-s h3{
+   
+    font-size:30px ;
+    font-family: helvetica;
+    color: #fff;
+}
+
+
+
+/*grid Css dans page soin*/
+.grid-container {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    /*grid-template-columns: 100px 100px 100px;*/
+    }
+    .grid-item
+    {
+    background:none;
+    text-align: center;
+    border: 1px ;
+    }
